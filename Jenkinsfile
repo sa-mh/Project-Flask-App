@@ -3,7 +3,7 @@ pipeline {
     stages {
     stage ('Docker Login') {
         steps {
-               sh 'sudo docker login -u horners -p humboldt77'
+               sh 'sudo docker login'
         }
     }
     stage ('Build Images') {
