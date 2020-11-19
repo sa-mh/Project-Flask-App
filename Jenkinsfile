@@ -8,7 +8,7 @@ pipeline {
         }
     }
     stage ('Build Images') {
-        sh script: '''
+        script: '''
                 #!/bin/bash
                 pwd
                 cd frontend
