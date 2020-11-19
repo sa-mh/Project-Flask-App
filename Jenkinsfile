@@ -16,7 +16,7 @@ pipeline {
                 cd ../backend
                 sudo docker build -t horners/backend:latest .
                 
-        }
+        
     }
     stage ('Push Images') {
         steps {
