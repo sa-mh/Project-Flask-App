@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    stages {
     stage ('Build Images') {
         steps {
                 sh 'docker login'
@@ -20,4 +21,5 @@ pipeline {
             sh 'docker push horners/frontend:latest'
         }
     }
+}
 }
