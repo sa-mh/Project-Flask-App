@@ -19,5 +19,5 @@ pipeline {
             sh 'docker push horners/backend:latest'
             sh 'docker push horners/frontend:latest'
         }
-
+    }
 }
