@@ -3,7 +3,7 @@ pipeline {
     stages {
     stage ('Docker Login') {
         steps {
-                sh 'docker login $docker_id'
+                sh 'docker login $dockerhub_id'
         }
     }
     stage ('Build Images') {
