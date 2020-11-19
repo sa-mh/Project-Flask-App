@@ -10,7 +10,7 @@ pipeline {
     stage ('Build Images') {
         steps { 
                 sh 'pwd'
-                sh 'cd Project-Flask-App/frontend'
+                sh 'cd ./frontend'
                 sh 'sudo docker build -t horners/frontend:latest .'
                 sh 'cd ../backend'
                 sh 'sudo docker build -t horners/backend:latest .'
