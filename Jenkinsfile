@@ -4,7 +4,7 @@ pipeline {
     stage ('Docker Login') {
         steps {
                 sh 'whoami'
-               sh 'sudo docker login -u horners -p humboldt77'
+               sh 'sudo docker login -u horners -p ProjectPassword'
         }
     }
     stage ('Build Images') {
