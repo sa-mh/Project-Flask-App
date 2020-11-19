@@ -8,14 +8,13 @@ pipeline {
         }
     }
     stage ('Build Images') {
-        steps { 
-                sh 'pwd'
-                
-                sh 'cd frontend'
-                sh 'ls -a'
-                sh 'sudo docker build -t horners/frontend:latest .'
-                sh 'cd ../backend'
-                sh 'sudo docker build -t horners/backend:latest .'
+        sh script: 
+                pwd
+                cd frontend
+                ls -a
+                sudo docker build -t horners/frontend:latest .
+                cd ../backend
+                sudo docker build -t horners/backend:latest .
                 
         }
     }
