@@ -4,6 +4,7 @@ This application is a simple [Flask application](https://flask.palletsprojects.c
 
 The following information should be everything you need to complete the project.
 
+
 ## Brief
 
 The application must:
