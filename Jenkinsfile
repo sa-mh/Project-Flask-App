@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh 'ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@18.203.102.75'
                 sh 'chmod +x ./run-tests.sh'
-                sh 'bash ./run-tests.sh
+                sh 'bash ./run-tests.sh'
             }
         }
 }
