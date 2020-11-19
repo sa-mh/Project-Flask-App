@@ -3,7 +3,7 @@ pipeline {
     stages {
     stage ('Docker Login') {
         steps {
-                sh 'whoami;
+                sh 'whoami'
                sh 'sudo docker login'
         }
     }
