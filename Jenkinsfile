@@ -9,7 +9,7 @@ pipeline {
     }
     stage ('Build Images') {
         steps { 
-                sh './Docker-Script.sh'  
+                sh 'bash ./Docker-Script.sh'  
         }
     }
     stage ('Push Images') {
