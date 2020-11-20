@@ -5,5 +5,5 @@ git clone https://github.com/sa-mh/Project-Flask-App
 cd Project-Flask-App
 bash run-tests.sh
 cd ..
-sudi rmi -r Project-Flask-App
+sudo rmi -r Project-Flask-App
 EOF
