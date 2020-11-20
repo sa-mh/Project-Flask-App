@@ -1,4 +1,5 @@
 #!/bin/bash
+cd kubernetes
 
 kubectl apply -f nginx-cm.yaml
 
