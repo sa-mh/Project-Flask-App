@@ -2,6 +2,6 @@
 
 ssh -i /home/jenkins/.ssh/id_rsa ubuntu@54.72.173.119 << EOF
 
-bash run-test.sh
+bash run-tests.sh
 
 EOF
