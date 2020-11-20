@@ -1,6 +1,8 @@
 #!/bin/bash
 cd kubernetes
 
+kubectl create ns project
+
 kubectl apply -f nginx-conf.yaml
 
 kubectl apply -f frontend-app.yaml
