@@ -19,7 +19,7 @@ pipeline {
     }
         stage ('Test the images'){
             steps {
-                sh 'ssh -i /home/jenkins..ssh/id_rsa.pub ubuntu@54.72.173.119'
+                sh 'ssh -i /home/jenkins/.ssh/id_rsa.pub ubuntu@54.72.173.119'
                 sh 'chmod +x ./run-tests.sh'
                 sh 'bash ./run-tests.sh'
             }
