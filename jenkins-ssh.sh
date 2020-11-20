@@ -6,5 +6,4 @@ cp run-tests.sh Project-Flask-App
 cd Project-Flask-App
 bash run-tests.sh
 cd ..
-sudo rm -r Project-Flask-App
 EOF
