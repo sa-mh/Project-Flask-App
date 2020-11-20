@@ -8,4 +8,5 @@ cd Project-Flask-App
 ls
 bash run-tests.sh
 cd ..
+sudo rm -r Project-Flask-App
 EOF
