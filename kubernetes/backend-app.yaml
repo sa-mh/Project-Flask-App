@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata: 
+metadata:
   name: backend
   namespace: project
   labels:
@@ -18,6 +18,10 @@ spec:
       containers:
       - name: backend
         image: horners/backend:latest
-        imagePullPolicy: Always
+        env:
+        - name: DATABASE_URI
+          value: ${DB_URI2}
+        - name: TEST_DATABASE_URI
+          value: ${TDB_URI2}
         ports:
         - containerPort: 5001
