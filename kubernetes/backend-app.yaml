@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: frontend
+  name: backend
   namespace: project
   labels:
-    app: frontend
+    app: backend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: frontend
+      app: backend
   template:
     metadata:
       labels:
-        app: frontend
+        app: backend
     spec:
       containers:
-      - name: frontend
-        image: horners/frontend:latest
+      - name: backend
+        image: horners/backend:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 5000
+        - containerPort: 5001
