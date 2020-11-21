@@ -20,4 +20,4 @@ spec:
         image: horners/backend:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 5000
+        - containerPort: 5001
