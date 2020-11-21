@@ -15,8 +15,6 @@ pipeline {
         steps {
             sh 'sudo docker push horners/backend:latest'
             sh 'sudo docker push horners/frontend:latest'
-            sh 'sudo docker rmi horners/backend:latest'
-            sh 'sudo docker rmi horners/frontend:latest'
         }
     }
         stage ('Test the images'){
