@@ -20,8 +20,8 @@ spec:
         image: horners/backend:latest
         env:
         - name: DATABASE_URI
-          value: ${DB_URI2}
+          value: mysql+pymysql://root:password@terraform-20201121213321368500000003.cml50gxwj1hn.eu-west-1.rds.amazonaws.com:3306/users
         - name: TEST_DATABASE_URI
-          value: ${TDB_URI2}
+          value: mysql+pymysql://root:password@terraform-20201121213321348100000002.cml50gxwj1hn.eu-west-1.rds.amazonaws.com:3306/testdb
         ports:
         - containerPort: 5001
