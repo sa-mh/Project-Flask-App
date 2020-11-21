@@ -1,27 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
-  name: backend
+metadata: 
+  name: frontend
   namespace: project
   labels:
-    app: backend
+    app: frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: backend
+      app: frontend
   template:
     metadata:
       labels:
-        app: backend
+        app: frontend
     spec:
       containers:
-      - name: backend
-        image: horners/backend:latest
-        env:
-        - name: DATABASE_URI
-          value: mysql+pymysql://root:password@terraform-20201121123706355700000003.cml50gxwj1hn.eu-west-1.rds.amazonaws.com:3306/users
-        - name: TEST_DATABASE_URI
-          value: mysql+pymysql://root:password@terraform-20201121123706355700000003.cml50gxwj1hn.eu-west-1.rds.amazonaws.com:3306/testdb
+      - name: frontend
+        image: horners/frontend:latest
         ports:
-        - containerPort: 5001
+        - containerPort: 5000
