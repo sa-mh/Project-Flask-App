@@ -3,7 +3,7 @@ pipeline {
     stages {
     stage ('Docker Login') {
         steps {
-            sh 'sudo docker login -u ${D_USER} -p ProjectPassword'
+            sh 'sudo docker login -u ${D_USER} -p${D_PASS}'
         }
     }
     stage ('Build Images') {
