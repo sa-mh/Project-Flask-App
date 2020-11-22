@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh -i /home/jenkins/.ssh/id_rsa ubuntu@63.32.117.17 << EOF
+ssh -i /home/jenkins/.ssh/id_rsa ubuntu@34.253.241.60 << EOF
 git clone https://github.com/sa-mh/Project-Flask-App
 cp run-tests.sh Project-Flask-App
 cp docker-compose.yaml Project-Flask-App
