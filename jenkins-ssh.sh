@@ -7,6 +7,7 @@ cp docker-compose.yaml Project-Flask-App
 cd Project-Flask-App
 
 cd frontend
+sudo docker login -u horners -p ProjectPassword
 sudo docker build -t horners/frontend:latest .
 cd ../backend
 sudo docker build -t horners/backend:latest .
