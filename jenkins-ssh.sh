@@ -11,6 +11,8 @@ sudo docker build -t horners/frontend:latest .
 cd ../backend
 sudo docker build -t horners/backend:latest .
 cd ..
+sudo docker push horners/backend:latest
+sudo docker push horners/frontend:latest
 
 ls
 bash run-tests.sh
