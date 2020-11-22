@@ -5,6 +5,13 @@ git clone https://github.com/sa-mh/Project-Flask-App
 cp run-tests.sh Project-Flask-App
 cp docker-compose.yaml Project-Flask-App
 cd Project-Flask-App
+
+cd frontend
+sudo docker build -t horners/frontend:latest .
+cd ../backend
+sudo docker build -t horners/backend:latest .
+cd ..
+
 ls
 bash run-tests.sh
 cd ..
