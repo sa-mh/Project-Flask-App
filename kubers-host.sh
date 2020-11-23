@@ -4,6 +4,8 @@ cd kubernetes
 sudo docker pull horners/frontend:latest
 sudo docker pull horners/backend:latest
 
+kubectl delete --all pods -n project
+
 kubectl create ns project
 
 kubectl apply -f nginx-conf.yaml
